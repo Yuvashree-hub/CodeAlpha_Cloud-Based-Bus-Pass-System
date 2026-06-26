@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Bus Ticket Booking</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#eef3ff;
+}
+
+
+.container{
+    width:420px;
+    background:white;
+    margin:50px auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px #aaa;
+}
+
+
+h1{
+    text-align:center;
+    color:#005bea;
+}
+
+
+input,select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+
+button{
+    width:100%;
+    padding:14px;
+    background:#005bea;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+
+button:hover{
+    background:#003f9e;
+}
+
+
+.logo{
+    text-align:center;
+    font-size:45px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="logo">🚌</div>
+
+
+<h1>Bus Ticket Booking</h1>
+
+
+<form method="POST">
+
+
+<label>Passenger Name</label>
+<input type="text" name="name" required>
+
+
+<label>Phone Number</label>
+<input type="number" name="phone" required>
+
+
+<label>From</label>
+
+<select name="from_city">
+
+<option>Chennai</option>
+<option>Bangalore</option>
+<option>Coimbatore</option>
+<option>Madurai</option>
+
+</select>
+
+
+
+<label>Destination</label>
+
+<select name="to_city">
+
+<option>Chennai</option>
+<option>Bangalore</option>
+<option>Coimbatore</option>
+<option>Madurai</option>
+
+</select>
+
+
+<label>Travel Date</label>
+
+<input type="date" name="date" required>
+
+
+
+<label>Bus Type</label>
+
+<select name="bus">
+
+<option>AC Sleeper</option>
+<option>Non AC Sleeper</option>
+<option>AC Seater</option>
+<option>Express</option>
+
+</select>
+
+
+
+<button type="submit">
+Book Ticket
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</body>
+
+</html>
